@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+
+/* project */
+/* Project card hover effects */
+.Tilt {
+  transform-style: preserve-3d;
+}
+
+.Tilt-inner {
+  transform: translateZ(20px);
+}
+
+/* Image hover zoom effect */
+.project-image-container {
+  overflow: hidden;
+}
+
+.project-image {
+  transition: transform 0.5s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
+
+/* Tag styling */
+.project-tag {
+  transition: all 0.3s ease;
+}
+
+.project-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Certificate card hover effects */
+.certificate-card {
+  transition: all 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image overlay effect */
+.certificate-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.certificate-image-container:hover .certificate-image-overlay {
+  opacity: 1;
+}
+
+/* Timeline animations */
+.timeline-item {
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Award badges */
+.award-badge {
+  transition: all 0.3s ease;
+}
+
+.award-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Technology tags */
+.tech-tag {
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Experience card hover effects */
+.experience-card {
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skill tag animations */
+.skill-tag {
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.05);
+}
+
+/* Milestone card hover */
+.milestone-card {
+  transition: all 0.3s ease;
+}
+
+.milestone-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Education timeline animations */
+.timeline-dot {
+  transition: all 0.3s ease;
+}
+
+.timeline-dot:hover {
+  transform: scale(1.1);
+}
+
+/* Skill category cards */
+.skill-category {
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+/* Journey section */
+.journey-card {
+  transition: all 0.3s ease;
+}
+
+.journey-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact form animations */
+.contact-card {
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Social icon hover effects */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+/* Form input focus */
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.dark .form-input:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.4);
+}
