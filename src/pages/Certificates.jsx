@@ -13,8 +13,18 @@ import {
   FaExternalLinkAlt,
   FaSearch,
   FaFilter,
-  FaTimes
-} from 'react-icons/fa';
+  FaTimes,
+  FaNodeJs,
+
+  FaLaptopCode,
+  FaServer,
+  FaRobot,
+  FaProjectDiagram,
+  FaShieldAlt,
+  FaCertificate
+
+}from 'react-icons/fa';
+import { SiJavascript, SiPostman, SiMongodb, SiNodedotjs } from 'react-icons/si';
 
 // Color themes for each certificate card
 const cardThemes = [
@@ -41,6 +51,8 @@ const cardThemes = [
 ];
 
 // Certificate data
+
+
 const certificates = [
   {
     id: 1,
@@ -117,31 +129,32 @@ const certificates = [
     issuer: "Postman",
     date: "2024",
     category: "API Development",
-    icon: <FaAward className="text-yellow-400 text-3xl" />,
+    icon: <SiPostman className="text-orange-400 text-3xl" />,
     link: "#",
     image: "/assets/certificates/postman.png",
-    skills: ["Teamwork", "Problem Solving", "API Request Handling"]
+    skills: ["API Development", "Request Handling", "Testing"]
   },
   {
     id: 8,
     title: "Hackathon Winner",
     issuer: "VDIT Haliyal",
     date: "December 2023",
-    category: "Achievement"||"Hackathons",
-    icon: <FaAward className="text-yellow-400 text-3xl" />,
+    category: "Hackathons",
+    icon: <FaProjectDiagram className="text-yellow-400 text-3xl" />,
     link: "#",
     image: "/assets/certificates/hackathon-cert.jpg",
     skills: ["Teamwork", "Problem Solving", "Innovation"]
-  }, {
+  },
+  {
     id: 9,
     title: "GeeksForGeeks Certification",
     issuer: "GeeksForGeeks",
     date: "2025",
-    category: "Coding Challenge"||"Challenge",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    category: "Coding Challenge",
+    icon: <FaCode className="text-green-500 text-3xl" />,
     link: "#",
     image: "/assets/certificates/gfg.png",
-    skills: ["GeeksForGeeksChallenge", "gfg160", "Coding Platform"],
+    skills: ["Problem Solving", "Algorithms", "Data Structures"],
     featured: true
   },
   {
@@ -155,16 +168,17 @@ const certificates = [
     image: "/assets/certificates/degree-cert.jpg",
     skills: ["Computer Science", "Software Engineering", "AI/ML"],
     featured: true
-  },{
+  },
+  {
     id: 11,
     title: "Responsive Web Design",
     issuer: "FreeCodeCamp",
     date: "2023",
-    category: "Web Development Fundamentals",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    category: "Web Development",
+    icon: <FaLaptopCode className="text-blue-400 text-3xl" />,
     link: "#",
     image: "/assets/certificates/freeRes.png",
-    skills: ["Responsive Web", "Web Design", "HTML/CSS"],
+    skills: ["HTML", "CSS", "Responsive Design"],
     featured: true
   },
   {
@@ -173,10 +187,10 @@ const certificates = [
     issuer: "FreecodeCamp",
     date: "2023",
     category: "Web Development",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    icon: <SiJavascript className="text-yellow-400 text-3xl" />,
     link: "#",
     image: "/assets/certificates/javascript.png",
-    skills: ["Javascript", "DataStructure Basic","Web Development"],
+    skills: ["JavaScript", "Algorithms", "Data Structures"],
     featured: true
   },
   {
@@ -184,22 +198,20 @@ const certificates = [
     title: "Mongodb & Nodejs Certification",
     issuer: "MongoDB University",
     date: "2023",
-    category: "Backend Development & Database",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    category: "Backend Development",
+    icon: <SiMongodb className="text-green-500 text-3xl" />,
     link: "#",
     image: "/assets/certificates/mongo.png",
-    skills: ["Database", "Nodejs", "NoSQL","Backend Development"],
+    skills: ["MongoDB", "Node.js", "Backend"],
     featured: true
   },
-
-  // Now onwards hackaton participation certificates
   {
     id: 14,
     title: "Hack2Intern",
     issuer: "TechVerti",
     date: "2025",
     category: "Hackathons",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    icon: <FaProjectDiagram className="text-purple-400 text-3xl" />,
     link: "#",
     image: "/assets/hackathons/techVerti.png",
     skills: ["React", "Generative AI", "Tailwind CSS"],
@@ -211,10 +223,10 @@ const certificates = [
     issuer: "SGI",
     date: "2023",
     category: "Hackathons",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    icon: <FaProjectDiagram className="text-blue-400 text-3xl" />,
     link: "#",
     image: "/assets/hackathons/Epicthon.png",
-    skills: ["Andriod Studio", "Java", "Firebase"],
+    skills: ["Android", "Java", "Firebase"],
     featured: true
   },
   {
@@ -222,25 +234,25 @@ const certificates = [
     title: "Microsoft AI Challenge",
     issuer: "Microsoft",
     date: "2023",
-    category: "Challenge",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    category: "AI Challenge",
+    icon: <FaRobot className="text-red-400 text-3xl" />,
     link: "#",
-    image: "/assets/certificates/MicrosoftA.ipng",
-    skills: ["AI", "NLP", "Generative AI BOT"],
+    image: "/assets/certificates/MicrosoftA.png",
+    skills: ["AI", "NLP", "Generative AI"],
     featured: true
   },
   {
     id: 17,
-    title: "FreecodeCamp Fronted Libraries",
+    title: "FreecodeCamp Frontend Libraries",
     issuer: "FreecodeCamp",
     date: "2023",
     category: "Web Development",
-    icon: <FaGraduationCap className="text-indigo-400 text-3xl" />,
+    icon: <FaLaptopCode className="text-blue-400 text-3xl" />,
     link: "#",
     image: "/assets/certificates/freeLib.png",
-    skills: ["JavaScript","Front-end Libraries"],
+    skills: ["React", "Bootstrap", "jQuery"],
     featured: true
-  },
+  }
 ];
 
 // Get all unique categories
