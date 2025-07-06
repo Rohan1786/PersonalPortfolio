@@ -94,7 +94,7 @@ const projects = [
     description: "Comprehensive full-stack application with all domain knowledge integrated",
     tags: ["MERN", "JavaScript", "Express", "MongoDB"],
     github: "",
-    demo: "https://github.com/Rohan1786/Hack2InternPS08",
+    demo: "https://github.com/Rohan1786/MyIDE_CODE_FUSION",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
     features: [
       "User authentication",

@@ -50,22 +50,22 @@ const Home = () => {
   // Featured projects
   const featuredProjects = [
     {
-      title: "AI Content Generator",
-      description: "Full-stack platform with AI-powered content creation",
-      tags: ["React", "Node.js", "TensorFlow", "MongoDB"],
-      link: "#"
+      title: "AI Pie Chart Dashboard",
+      description: "Generate pie charts from natural language queries",
+      tags: ["React", "Node.js", "GeminiAI", "Chart.js"],
+      link: "https://hack2-intern-ps-08-git-main-rohan1786s-projects.vercel.app/"
     },
     {
       title: "Cybersecurity Dashboard",
       description: "Real-time threat monitoring and visualization",
       tags: ["GeminiAI", "Tensorflow", "React", "JavaScript"],
-      link: "#"
+      link: "https://fraudshieldai.netlify.app/"
     },
     {
-      title: "LeetCode Tracker",
-      description: "DSA progress tracker with analytics",
-      tags: ["TypeScript", "Next.js", "Firebase", "Chart.js"],
-      link: "#"
+      title: "Code Fusion",
+      description: "Practice coding skills in web development",
+      tags: ["Javascript", "Mongodb", "React", "Express"],
+      link: "https://github.com/Rohan1786/MyIDE_CODE_FUSION"
     }
   ];
 
