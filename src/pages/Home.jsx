@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Particles from "react-tsparticles";
-// import { loadFull } from "tsparticles";
-import { FaGithub, FaLinkedin, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaInstagram, FaReact, FaNodeJs, FaJava, FaPython } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsArrowDown } from 'react-icons/bs';
+import { SiTensorflow, SiMongodb, SiTypescript } from 'react-icons/si';
+import { IoMdRocket } from 'react-icons/io';
+import { GiArtificialIntelligence } from 'react-icons/gi';
 
 const Home = () => {
   const [ref, inView] = useInView({
@@ -16,6 +18,72 @@ const Home = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
   };
+
+  // Skill data for the rotating cards
+  const skills = [
+    {
+      title: "Frontend",
+      icon: <FaReact className="w-12 h-12 text-cyan-400" />,
+      items: ["React", "Tailwind", "Framer Motion","CSS"],
+      color: "from-cyan-500 to-blue-600"
+    },
+    {
+      title: "Backend",
+      icon: <FaNodeJs className="w-12 h-12 text-green-500" />,
+      items: ["Node.js", "Express", "REST APIs"],
+      color: "from-green-500 to-emerald-600"
+    },
+    {
+      title: "AI/ML",
+      icon: <GiArtificialIntelligence className="w-12 h-12 text-purple-500" />,
+      items: ["TensorFlow", "GeminiAI", "Computer Vision", "Data Science"],
+      color: "from-purple-500 to-fuchsia-600"
+    },
+    {
+      title: "Languages",
+      icon: <FaJava className="w-12 h-12 text-red-500" />,
+      items: ["Java", "Python", "JavaScript"],
+      color: "from-red-500 to-pink-600"
+    }
+  ];
+
+  // Featured projects
+  const featuredProjects = [
+    {
+      title: "AI Content Generator",
+      description: "Full-stack platform with AI-powered content creation",
+      tags: ["React", "Node.js", "TensorFlow", "MongoDB"],
+      link: "#"
+    },
+    {
+      title: "Cybersecurity Dashboard",
+      description: "Real-time threat monitoring and visualization",
+      tags: ["GeminiAI", "Tensorflow", "React", "JavaScript"],
+      link: "#"
+    },
+    {
+      title: "LeetCode Tracker",
+      description: "DSA progress tracker with analytics",
+      tags: ["TypeScript", "Next.js", "Firebase", "Chart.js"],
+      link: "#"
+    }
+  ];
+
+  // Testimonials
+  const testimonials = [
+    {
+      quote: "Rohan's technical depth and problem-solving skills are exceptional. He delivered our project ahead of schedule.",
+      author: "Jane Smith, Tech Lead at XYZ Corp"
+    },
+    {
+      quote: "His ability to explain complex concepts simply makes him a great team player and mentor.",
+      author: "Mike Johnson, Hackathon Organizer"
+    },
+    {
+      quote: "The AI solution Rohan built increased our operational efficiency by 40%.",
+      author: "Sarah Lee, CEO at Startup ABC"
+    }
+  ];
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-gray-900 text-white">
@@ -249,6 +317,124 @@ const Home = () => {
             <BsArrowDown className="h-6 w-6 animate-bounce" />
           </div>
         </motion.div>
+      </div>
+
+      {/* Additional Sections */}
+      <div className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-indigo-900">
+        {/* Skills Section */}
+        <section className="max-w-7xl mx-auto mb-28">
+          <motion.h2 
+            className="text-3xl sm:text-4xl font-bold text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Technical</span> Expertise
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10 }}
+                className={`bg-gradient-to-br ${skill.color} rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-default`}
+              >
+                <div className="flex flex-col items-center text-center h-full">
+                  <div className="mb-4">{skill.icon}</div>
+                  <h3 className="text-xl font-bold mb-4">{skill.title}</h3>
+                  <ul className="space-y-2">
+                    {skill.items.map((item, i) => (
+                      <li key={i} className="text-gray-200">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        {/* Featured Projects Preview */}
+        <section className="max-w-7xl mx-auto mb-28">
+          <motion.h2 
+            className="text-3xl sm:text-4xl font-bold text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Featured</span> Projects
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {featuredProjects.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.03 }}
+                className="bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-purple-500/20 transition-all duration-300 border border-gray-700"
+              >
+                <div className="p-6 h-full flex flex-col">
+                  <div className="flex items-center mb-4">
+                    <IoMdRocket className="text-purple-400 mr-2 text-xl" />
+                    <h3 className="text-xl font-bold">{project.title}</h3>
+                  </div>
+                  <p className="text-gray-300 mb-4 flex-grow">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, i) => (
+                      <span key={i} className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-200">{tag}</span>
+                    ))}
+                  </div>
+                  <a 
+                    href={project.link} 
+                    className="mt-auto inline-block px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg text-white font-medium hover:opacity-90 transition-opacity"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="max-w-7xl mx-auto">
+          <motion.h2 
+            className="text-3xl sm:text-4xl font-bold text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            What <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-600">People Say</span>
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gray-800 bg-opacity-50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 relative"
+              >
+                <div className="absolute -top-3 -left-3 w-10 h-10 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white">
+                  <span className="text-lg font-bold">"</span>
+                </div>
+                <p className="text-gray-300 italic mb-4 pl-4">{testimonial.quote}</p>
+                <p className="text-amber-400 font-medium">{testimonial.author}</p>
+              </motion.div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
