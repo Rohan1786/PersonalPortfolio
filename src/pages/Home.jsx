@@ -239,7 +239,7 @@ const Home = () => {
             className="flex justify-center mt-8 space-x-6"
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Rohan1786"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition-colors duration-300"
@@ -248,7 +248,7 @@ const Home = () => {
               <FaGithub className="h-8 w-8" />
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/rohan-pawar-59621525a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
@@ -257,7 +257,7 @@ const Home = () => {
               <FaLinkedin className="h-8 w-8" />
             </a>
             <a
-              href="https://youtube.com/yourchannel"
+              href="https://www.youtube.com/@VinkiRohanVlog"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-red-500 transition-colors duration-300"
