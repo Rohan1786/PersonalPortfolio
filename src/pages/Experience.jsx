@@ -46,7 +46,7 @@ const Experience = () => {
         "Prototyped backend functionalities for portfolio systems",
         "Collaborated with security team to implement secure design patterns"
       ],
-      skills: ["HTML5", "CSS3", "JavaScript", "UI/UX", "Figma"],
+      skills: ["HTML5", "CSS3", "JavaScript", "UI/UX"],
       icon: <FaBriefcase className="text-green-500 text-2xl" />
     },
     {
