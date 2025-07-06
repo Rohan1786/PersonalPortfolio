@@ -72,7 +72,7 @@ const education = [
     score: "Percentage: 91%",
     highlights: [
       "Focus on Computer Science and Mathematics",
-      "Developed foundational programming skills"
+      "Basic knowledge of computer components",
     ],
     color: "from-blue-500 to-cyan-500"
   }
