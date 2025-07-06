@@ -80,8 +80,8 @@ const education = [
 
 // Skills data - categorized
 const skills = {
-  languages: ["Java", "Python", "JavaScript", "TypeScript"],
-  frontend: ["HTML5", "CSS3", "React", "Tailwind CSS", "Next.js"],
+  languages: ["Java", "Python", "JavaScript"],
+  frontend: ["HTML5", "CSS3", "React", "Tailwind CSS",],
   backend: ["Node.js", "Express.js", "Flask", "FastAPI"],
   databases: ["MongoDB", "Firebase", "MySQL"],
   ai_ml: ["TensorFlow", "OpenCV", "Scikit-learn", "Gemini AI"],

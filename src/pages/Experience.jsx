@@ -33,7 +33,7 @@ const Experience = () => {
         "Optimized database queries resulting in 60% faster data retrieval",
         "Collaborated using Agile methodology to deliver features on schedule"
       ],
-      skills: ["Java", "Spring Boot", "REST APIs", "JWT", "Agile", "MySQL"],
+      skills: ["Nodejs", "REST APIs", "JWT", "Agile", "Mongodb","React","Swagger API"],
       icon: <FaLaptopCode className="text-blue-500 text-2xl" />
     },
     {
