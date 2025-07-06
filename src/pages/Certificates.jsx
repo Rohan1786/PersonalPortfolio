@@ -237,7 +237,7 @@ const certificates = [
     category: "AI Challenge",
     icon: <FaRobot className="text-red-400 text-3xl" />,
     link: "#",
-    image: "/assets/certificates/MicrosoftA.png",
+    image: "/assets/certificates/microsoft.png",
     skills: ["AI", "NLP", "Generative AI"],
     featured: true
   },
