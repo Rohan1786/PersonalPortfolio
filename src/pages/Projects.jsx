@@ -106,6 +106,39 @@ const projects = [
       stars: 72,
       forks: 18
     }
+  },
+  {
+    id: 5,
+    title: "Coming soon",
+    description: "Upating two more projects soon",
+    tags: [],
+    github: "",
+    demo: "",
+    image: "",
+    features: [
+      "Project 1: ",
+    
+    ],
+    stats: {
+      stars: 72,
+      forks: 18
+    }
+  },
+  {
+    id: 6,
+    title: "Coming soon",
+    description: "Upating two more projects soon",
+    tags: [],
+    github: "",
+    demo: "",
+    image: "",
+    features: [
+      "Project 1: ",
+    ],
+    stats: {
+      stars: 72,
+      forks: 18
+    }
   }
 ];
 
@@ -365,7 +398,7 @@ const Projects = () => {
             transition={{ delay: 0.5 }}
           >
             <h3 className="text-lg sm:text-xl font-medium text-purple-200">
-              No projects found with the selected filter.
+              Coming soon
             </h3>
           </motion.div>
         )}
