@@ -7,7 +7,12 @@ import { BsArrowDown } from 'react-icons/bs';
 import { SiTensorflow, SiMongodb, SiTypescript } from 'react-icons/si';
 import { IoMdRocket } from 'react-icons/io';
 import { GiArtificialIntelligence } from 'react-icons/gi';
-
+import About from './About';
+import Projects from './Projects';
+import Experience from './Experience';
+import Contact from './Contact';
+import Hackathons from './Hackathons';
+import Certificates from './Certificates';
 const Home = () => {
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -435,6 +440,14 @@ const Home = () => {
             ))}
           </div>
         </section>
+      </div>
+      <div>
+        <About/>
+        <Projects/>
+        <Experience/>
+        <Hackathons/>
+        <Certificates/>
+        <Contact/>
       </div>
     </div>
   );
