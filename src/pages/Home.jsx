@@ -291,13 +291,13 @@ const Home = () => {
             className="flex flex-wrap justify-center gap-4 mt-10"
           >
             <a
-              href="#projects"
+              href="https://github.com/Rohan1786"
               className="px-8 py-3 text-lg font-medium rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-105"
             >
               View My Work
             </a>
             <a
-              href="#contact"
+              href="https://www.linkedin.com/in/rohan-pawar-59621525a/"
               className="px-8 py-3 text-lg font-medium rounded-full bg-transparent text-white border-2 border-white hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105"
             >
               Contact Me
