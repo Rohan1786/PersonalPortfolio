@@ -78,9 +78,9 @@ const Navbar = () => {
 
   // Social links
   const socialLinks = [
-    { href: 'https://github.com', icon: FaGithub, label: 'GitHub' },
-    { href: 'https://linkedin.com', icon: FaLinkedin, label: 'LinkedIn' },
-    { href: 'mailto:contact@example.com', icon: FaEnvelope, label: 'Email' }
+    { href: 'https://github.com/Rohan1786', icon: FaGithub, label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/rohan-pawar-59621525a/', icon: FaLinkedin, label: 'LinkedIn' },
+    { href: 'mailto:vinkirohan02@gmail.com', icon: FaEnvelope, label: 'Email' }
   ];
 
   // Enhanced scroll handler with throttle
